@@ -1,0 +1,704 @@
+EESchema Schematic File Version 4
+LIBS:Divider-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3500 5750 600  400 
+U 5C24C2D4
+F0 "DigitalIn" 50
+F1 "DigitalIn.sch" 50
+F2 "Trig" I R 4100 5950 50 
+F3 "In" I L 3500 5950 50 
+$EndSheet
+$Sheet
+S 11800 4550 550  450 
+U 5C24C30F
+F0 "DigitalOut" 50
+F1 "DigitalOut.sch" 50
+F2 "Trig" I L 11800 4750 50 
+F3 "Out" I R 12350 4750 50 
+$EndSheet
+Wire Wire Line
+	12350 4750 12750 4750
+$Comp
+L power:GND #PWR05
+U 1 1 5C24C765
+P 12650 4950
+F 0 "#PWR05" H 12650 4700 50  0001 C CNN
+F 1 "GND" H 12655 4777 50  0000 C CNN
+F 2 "" H 12650 4950 50  0001 C CNN
+F 3 "" H 12650 4950 50  0001 C CNN
+	1    12650 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 4950 12650 4850
+Wire Wire Line
+	12650 4850 12750 4850
+$Comp
+L power:GND #PWR09
+U 1 1 5C24C7A8
+P 3150 6150
+F 0 "#PWR09" H 3150 5900 50  0001 C CNN
+F 1 "GND" H 3155 5977 50  0000 C CNN
+F 2 "" H 3150 6150 50  0001 C CNN
+F 3 "" H 3150 6150 50  0001 C CNN
+	1    3150 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6150 3150 6050
+Wire Wire Line
+	3150 6050 3050 6050
+Wire Wire Line
+	3050 5950 3500 5950
+Text GLabel 4400 5950 2    50   Input ~ 0
+RST
+Wire Wire Line
+	4400 5950 4100 5950
+Text GLabel 11450 4750 0    50   Input ~ 0
+OUT3
+Wire Wire Line
+	11450 4750 11800 4750
+$Sheet
+S 5100 9600 600  400 
+U 5C252D35
+F0 "POW5V" 50
+F1 "POW5V.sch" 50
+$EndSheet
+$Comp
+L MCU_Microchip_ATtiny:ATtiny84-20MU U1
+U 1 1 5C2549DA
+P 7550 5650
+F 0 "U1" H 7010 5696 50  0000 R CNN
+F 1 "ATtiny84-20MU" H 7010 5605 50  0000 R CNN
+F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" H 7550 5650 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8006.pdf" H 7550 5650 50  0001 C CNN
+	1    7550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5C254AB8
+P 7550 6700
+F 0 "#PWR011" H 7550 6450 50  0001 C CNN
+F 1 "GND" H 7555 6527 50  0000 C CNN
+F 2 "" H 7550 6700 50  0001 C CNN
+F 3 "" H 7550 6700 50  0001 C CNN
+	1    7550 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 6700 7550 6550
+$Comp
+L power:+5V #PWR04
+U 1 1 5C254EDE
+P 7550 4600
+F 0 "#PWR04" H 7550 4450 50  0001 C CNN
+F 1 "+5V" H 7565 4773 50  0000 C CNN
+F 2 "" H 7550 4600 50  0001 C CNN
+F 3 "" H 7550 4600 50  0001 C CNN
+	1    7550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4600 7550 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5C257CF6
+P 10050 10350
+AR Path="/5C2554C2/5C257CF6" Ref="#PWR?"  Part="1" 
+AR Path="/5C257CF6" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 10050 10100 50  0001 C CNN
+F 1 "GND" H 10050 10200 50  0000 C CNN
+F 2 "" H 10050 10350 50  0001 C CNN
+F 3 "" H 10050 10350 50  0001 C CNN
+	1    10050 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C257CFF
+P 10050 8600
+AR Path="/5C2554C2/5C257CFF" Ref="#PWR?"  Part="1" 
+AR Path="/5C257CFF" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 10050 8450 50  0001 C CNN
+F 1 "+5V" H 10050 8740 50  0000 C CNN
+F 2 "" H 10050 8600 50  0001 C CNN
+F 3 "" H 10050 8600 50  0001 C CNN
+	1    10050 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 5C257D06
+P 9750 9750
+AR Path="/5C2554C2/5C257D06" Ref="J?"  Part="1" 
+AR Path="/5C257D06" Ref="J11"  Part="1" 
+F 0 "J11" H 9800 10067 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 9800 9976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 9750 9750 50  0001 C CNN
+F 3 "~" H 9750 9750 50  0001 C CNN
+	1    9750 9750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 8600 10050 9650
+$Comp
+L Device:R R?
+U 1 1 5C257D15
+P 9400 8900
+AR Path="/5C2554C2/5C257D15" Ref="R?"  Part="1" 
+AR Path="/5C257D15" Ref="R1"  Part="1" 
+F 0 "R1" H 9470 8946 50  0000 L CNN
+F 1 "10k" H 9470 8855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9330 8900 50  0001 C CNN
+F 3 "~" H 9400 8900 50  0001 C CNN
+	1    9400 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C257D1C
+P 9400 8600
+AR Path="/5C2554C2/5C257D1C" Ref="#PWR?"  Part="1" 
+AR Path="/5C257D1C" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 9400 8450 50  0001 C CNN
+F 1 "+5V" H 9400 8740 50  0000 C CNN
+F 2 "" H 9400 8600 50  0001 C CNN
+F 3 "" H 9400 8600 50  0001 C CNN
+	1    9400 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 8600 9400 8750
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C257D24
+P 9800 10250
+AR Path="/5C2554C2/5C257D24" Ref="SW?"  Part="1" 
+AR Path="/5C257D24" Ref="SW1"  Part="1" 
+F 0 "SW1" H 9800 10535 50  0000 C CNN
+F 1 "SW_Push" H 9800 10444 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 9800 10450 50  0001 C CNN
+F 3 "" H 9800 10450 50  0001 C CNN
+	1    9800 10250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 10250 9400 10250
+Wire Wire Line
+	9400 9850 9550 9850
+Wire Wire Line
+	9400 9850 9400 10250
+Text GLabel 10200 9750 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	10050 9750 10200 9750
+Wire Wire Line
+	9400 9050 9400 9850
+Connection ~ 9400 9850
+Wire Wire Line
+	10050 10250 10050 10350
+Wire Wire Line
+	10050 9850 10050 10250
+Connection ~ 10050 10250
+Wire Wire Line
+	10000 10250 10050 10250
+Text GLabel 9250 9650 0    50   Input ~ 0
+MISO
+Wire Wire Line
+	9250 9650 9550 9650
+Text GLabel 9250 9750 0    50   Input ~ 0
+SCK
+Wire Wire Line
+	9250 9750 9550 9750
+Text GLabel 9250 9850 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	9250 9850 9400 9850
+Text GLabel 8300 6250 2    50   Input ~ 0
+RESET
+Wire Wire Line
+	8150 6250 8300 6250
+$Comp
+L Device:C C1
+U 1 1 5C275236
+P 4000 9800
+F 0 "C1" H 4115 9846 50  0000 L CNN
+F 1 "100n" H 4115 9755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4038 9650 50  0001 C CNN
+F 3 "~" H 4000 9800 50  0001 C CNN
+	1    4000 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5C2753B4
+P 4000 10050
+F 0 "#PWR018" H 4000 9800 50  0001 C CNN
+F 1 "GND" H 4005 9877 50  0000 C CNN
+F 2 "" H 4000 10050 50  0001 C CNN
+F 3 "" H 4000 10050 50  0001 C CNN
+	1    4000 10050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 10050 4000 9950
+$Comp
+L power:+5V #PWR016
+U 1 1 5C27699A
+P 4000 9550
+F 0 "#PWR016" H 4000 9400 50  0001 C CNN
+F 1 "+5V" H 4015 9723 50  0000 C CNN
+F 2 "" H 4000 9550 50  0001 C CNN
+F 3 "" H 4000 9550 50  0001 C CNN
+	1    4000 9550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 9550 4000 9650
+NoConn ~ 12750 4650
+$Sheet
+S 3500 6500 600  400 
+U 5C482B38
+F0 "DualSW" 50
+F1 "DualSW.sch" 50
+F2 "Out" I R 4100 6700 50 
+$EndSheet
+Text GLabel 4450 6700 2    50   Input ~ 0
+SPDTS
+Wire Wire Line
+	4100 6700 4450 6700
+Wire Wire Line
+	3050 5850 3150 5850
+$Comp
+L Connector:AudioJack2_SwitchT J7
+U 1 1 5C28C3CE
+P 2850 5950
+F 0 "J7" H 2670 5883 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 2670 5974 50  0000 R CNN
+F 2 "Local:PJ398SM" H 2850 5950 50  0001 C CNN
+F 3 "~" H 2850 5950 50  0001 C CNN
+	1    2850 5950
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J4
+U 1 1 5C28C823
+P 12950 4750
+F 0 "J4" H 12770 4683 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 12770 4774 50  0000 R CNN
+F 2 "Local:PJ398SM" H 12950 4750 50  0001 C CNN
+F 3 "~" H 12950 4750 50  0001 C CNN
+	1    12950 4750
+	-1   0    0    1   
+$EndComp
+Text GLabel 8750 5750 2    50   Input ~ 0
+SPDTS
+Text GLabel 8300 5550 2    50   Input ~ 0
+MISO
+Text GLabel 8300 5650 2    50   Input ~ 0
+MOSI
+Text GLabel 8300 5450 2    50   Input ~ 0
+SCK
+$Sheet
+S 3500 5000 600  400 
+U 5C2AB00C
+F0 "sheet5C2AB00C" 50
+F1 "DigitalIn.sch" 50
+F2 "Trig" I R 4100 5200 50 
+F3 "In" I L 3500 5200 50 
+$EndSheet
+$Comp
+L power:GND #PWR07
+U 1 1 5C2AB012
+P 3150 5400
+F 0 "#PWR07" H 3150 5150 50  0001 C CNN
+F 1 "GND" H 3155 5227 50  0000 C CNN
+F 2 "" H 3150 5400 50  0001 C CNN
+F 3 "" H 3150 5400 50  0001 C CNN
+	1    3150 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5400 3150 5300
+Wire Wire Line
+	3150 5300 3050 5300
+Wire Wire Line
+	3050 5200 3500 5200
+Text GLabel 4400 5200 2    50   Input ~ 0
+CLK
+Wire Wire Line
+	4400 5200 4100 5200
+$Comp
+L power:+5V #PWR06
+U 1 1 5C2AB01D
+P 3150 5000
+F 0 "#PWR06" H 3150 4850 50  0001 C CNN
+F 1 "+5V" H 3165 5173 50  0000 C CNN
+F 2 "" H 3150 5000 50  0001 C CNN
+F 3 "" H 3150 5000 50  0001 C CNN
+	1    3150 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5100 3150 5100
+Wire Wire Line
+	3150 5100 3150 5000
+$Comp
+L Connector:AudioJack2_SwitchT J5
+U 1 1 5C2AB025
+P 2850 5200
+F 0 "J5" H 2670 5133 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 2670 5224 50  0000 R CNN
+F 2 "Local:PJ398SM" H 2850 5200 50  0001 C CNN
+F 3 "~" H 2850 5200 50  0001 C CNN
+	1    2850 5200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3150 5850 3150 6050
+Connection ~ 3150 6050
+$Sheet
+S 11800 3800 550  450 
+U 5C2AE401
+F0 "sheet5C2AE401" 50
+F1 "DigitalOut.sch" 50
+F2 "Trig" I L 11800 4000 50 
+F3 "Out" I R 12350 4000 50 
+$EndSheet
+Wire Wire Line
+	12350 4000 12750 4000
+$Comp
+L power:GND #PWR03
+U 1 1 5C2AE408
+P 12650 4200
+F 0 "#PWR03" H 12650 3950 50  0001 C CNN
+F 1 "GND" H 12655 4027 50  0000 C CNN
+F 2 "" H 12650 4200 50  0001 C CNN
+F 3 "" H 12650 4200 50  0001 C CNN
+	1    12650 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 4200 12650 4100
+Wire Wire Line
+	12650 4100 12750 4100
+Text GLabel 11450 4000 0    50   Input ~ 0
+OUT2
+Wire Wire Line
+	11450 4000 11800 4000
+NoConn ~ 12750 3900
+$Comp
+L Connector:AudioJack2_SwitchT J3
+U 1 1 5C2AE413
+P 12950 4000
+F 0 "J3" H 12770 3933 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 12770 4024 50  0000 R CNN
+F 2 "Local:PJ398SM" H 12950 4000 50  0001 C CNN
+F 3 "~" H 12950 4000 50  0001 C CNN
+	1    12950 4000
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 11800 3050 550  450 
+U 5C2AEF07
+F0 "sheet5C2AEF07" 50
+F1 "DigitalOut.sch" 50
+F2 "Trig" I L 11800 3250 50 
+F3 "Out" I R 12350 3250 50 
+$EndSheet
+Wire Wire Line
+	12350 3250 12750 3250
+$Comp
+L power:GND #PWR02
+U 1 1 5C2AEF0E
+P 12650 3450
+F 0 "#PWR02" H 12650 3200 50  0001 C CNN
+F 1 "GND" H 12655 3277 50  0000 C CNN
+F 2 "" H 12650 3450 50  0001 C CNN
+F 3 "" H 12650 3450 50  0001 C CNN
+	1    12650 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 3450 12650 3350
+Wire Wire Line
+	12650 3350 12750 3350
+Text GLabel 11450 3250 0    50   Input ~ 0
+OUT1
+Wire Wire Line
+	11450 3250 11800 3250
+NoConn ~ 12750 3150
+$Comp
+L Connector:AudioJack2_SwitchT J2
+U 1 1 5C2AEF19
+P 12950 3250
+F 0 "J2" H 12770 3183 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 12770 3274 50  0000 R CNN
+F 2 "Local:PJ398SM" H 12950 3250 50  0001 C CNN
+F 3 "~" H 12950 3250 50  0001 C CNN
+	1    12950 3250
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 11800 2300 550  450 
+U 5C2AEF1D
+F0 "sheet5C2AEF1D" 50
+F1 "DigitalOut.sch" 50
+F2 "Trig" I L 11800 2500 50 
+F3 "Out" I R 12350 2500 50 
+$EndSheet
+Wire Wire Line
+	12350 2500 12750 2500
+$Comp
+L power:GND #PWR01
+U 1 1 5C2AEF24
+P 12650 2700
+F 0 "#PWR01" H 12650 2450 50  0001 C CNN
+F 1 "GND" H 12655 2527 50  0000 C CNN
+F 2 "" H 12650 2700 50  0001 C CNN
+F 3 "" H 12650 2700 50  0001 C CNN
+	1    12650 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 2700 12650 2600
+Wire Wire Line
+	12650 2600 12750 2600
+Text GLabel 11450 2500 0    50   Input ~ 0
+OUT0
+Wire Wire Line
+	11450 2500 11800 2500
+NoConn ~ 12750 2400
+$Comp
+L Connector:AudioJack2_SwitchT J1
+U 1 1 5C2AEF2F
+P 12950 2500
+F 0 "J1" H 12770 2433 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 12770 2524 50  0000 R CNN
+F 2 "Local:PJ398SM" H 12950 2500 50  0001 C CNN
+F 3 "~" H 12950 2500 50  0001 C CNN
+	1    12950 2500
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 11800 7550 550  450 
+U 5C2AFDF5
+F0 "sheet5C2AFDF5" 50
+F1 "DigitalOut.sch" 50
+F2 "Trig" I L 11800 7750 50 
+F3 "Out" I R 12350 7750 50 
+$EndSheet
+Wire Wire Line
+	12350 7750 12750 7750
+$Comp
+L power:GND #PWR013
+U 1 1 5C2AFDFC
+P 12650 7950
+F 0 "#PWR013" H 12650 7700 50  0001 C CNN
+F 1 "GND" H 12655 7777 50  0000 C CNN
+F 2 "" H 12650 7950 50  0001 C CNN
+F 3 "" H 12650 7950 50  0001 C CNN
+	1    12650 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 7950 12650 7850
+Wire Wire Line
+	12650 7850 12750 7850
+Text GLabel 11450 7750 0    50   Input ~ 0
+OUT7
+Wire Wire Line
+	11450 7750 11800 7750
+NoConn ~ 12750 7650
+$Comp
+L Connector:AudioJack2_SwitchT J10
+U 1 1 5C2AFE07
+P 12950 7750
+F 0 "J10" H 12770 7683 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 12770 7774 50  0000 R CNN
+F 2 "Local:PJ398SM" H 12950 7750 50  0001 C CNN
+F 3 "~" H 12950 7750 50  0001 C CNN
+	1    12950 7750
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 11800 6800 550  450 
+U 5C2AFE0B
+F0 "sheet5C2AFE0B" 50
+F1 "DigitalOut.sch" 50
+F2 "Trig" I L 11800 7000 50 
+F3 "Out" I R 12350 7000 50 
+$EndSheet
+Wire Wire Line
+	12350 7000 12750 7000
+$Comp
+L power:GND #PWR012
+U 1 1 5C2AFE12
+P 12650 7200
+F 0 "#PWR012" H 12650 6950 50  0001 C CNN
+F 1 "GND" H 12655 7027 50  0000 C CNN
+F 2 "" H 12650 7200 50  0001 C CNN
+F 3 "" H 12650 7200 50  0001 C CNN
+	1    12650 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 7200 12650 7100
+Wire Wire Line
+	12650 7100 12750 7100
+Text GLabel 11450 7000 0    50   Input ~ 0
+OUT6
+Wire Wire Line
+	11450 7000 11800 7000
+NoConn ~ 12750 6900
+$Comp
+L Connector:AudioJack2_SwitchT J9
+U 1 1 5C2AFE1D
+P 12950 7000
+F 0 "J9" H 12770 6933 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 12770 7024 50  0000 R CNN
+F 2 "Local:PJ398SM" H 12950 7000 50  0001 C CNN
+F 3 "~" H 12950 7000 50  0001 C CNN
+	1    12950 7000
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 11800 6050 550  450 
+U 5C2AFE21
+F0 "sheet5C2AFE21" 50
+F1 "DigitalOut.sch" 50
+F2 "Trig" I L 11800 6250 50 
+F3 "Out" I R 12350 6250 50 
+$EndSheet
+Wire Wire Line
+	12350 6250 12750 6250
+$Comp
+L power:GND #PWR010
+U 1 1 5C2AFE28
+P 12650 6450
+F 0 "#PWR010" H 12650 6200 50  0001 C CNN
+F 1 "GND" H 12655 6277 50  0000 C CNN
+F 2 "" H 12650 6450 50  0001 C CNN
+F 3 "" H 12650 6450 50  0001 C CNN
+	1    12650 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 6450 12650 6350
+Wire Wire Line
+	12650 6350 12750 6350
+Text GLabel 11450 6250 0    50   Input ~ 0
+OUT5
+Wire Wire Line
+	11450 6250 11800 6250
+NoConn ~ 12750 6150
+$Comp
+L Connector:AudioJack2_SwitchT J8
+U 1 1 5C2AFE33
+P 12950 6250
+F 0 "J8" H 12770 6183 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 12770 6274 50  0000 R CNN
+F 2 "Local:PJ398SM" H 12950 6250 50  0001 C CNN
+F 3 "~" H 12950 6250 50  0001 C CNN
+	1    12950 6250
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 11800 5300 550  450 
+U 5C2AFE37
+F0 "sheet5C2AFE37" 50
+F1 "DigitalOut.sch" 50
+F2 "Trig" I L 11800 5500 50 
+F3 "Out" I R 12350 5500 50 
+$EndSheet
+Wire Wire Line
+	12350 5500 12750 5500
+$Comp
+L power:GND #PWR08
+U 1 1 5C2AFE3E
+P 12650 5700
+F 0 "#PWR08" H 12650 5450 50  0001 C CNN
+F 1 "GND" H 12655 5527 50  0000 C CNN
+F 2 "" H 12650 5700 50  0001 C CNN
+F 3 "" H 12650 5700 50  0001 C CNN
+	1    12650 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 5700 12650 5600
+Wire Wire Line
+	12650 5600 12750 5600
+Text GLabel 11450 5500 0    50   Input ~ 0
+OUT4
+Wire Wire Line
+	11450 5500 11800 5500
+NoConn ~ 12750 5400
+$Comp
+L Connector:AudioJack2_SwitchT J6
+U 1 1 5C2AFE49
+P 12950 5500
+F 0 "J6" H 12770 5433 50  0000 R CNN
+F 1 "AudioJack2_SwitchT" H 12770 5524 50  0000 R CNN
+F 2 "Local:PJ398SM" H 12950 5500 50  0001 C CNN
+F 3 "~" H 12950 5500 50  0001 C CNN
+	1    12950 5500
+	-1   0    0    1   
+$EndComp
+Text GLabel 8750 5050 2    50   Input ~ 0
+OUT0
+Text GLabel 8750 5150 2    50   Input ~ 0
+OUT1
+Text GLabel 8750 5250 2    50   Input ~ 0
+OUT2
+Text GLabel 8750 5350 2    50   Input ~ 0
+OUT3
+Text GLabel 8750 5450 2    50   Input ~ 0
+OUT4
+Text GLabel 8750 5550 2    50   Input ~ 0
+OUT5
+Text GLabel 8750 5650 2    50   Input ~ 0
+OUT6
+Text GLabel 8750 5950 2    50   Input ~ 0
+OUT7
+Wire Wire Line
+	8150 5050 8750 5050
+Wire Wire Line
+	8150 5150 8750 5150
+Wire Wire Line
+	8150 5250 8750 5250
+Wire Wire Line
+	8150 5350 8750 5350
+Wire Wire Line
+	8150 5450 8750 5450
+Wire Wire Line
+	8150 5550 8750 5550
+Wire Wire Line
+	8150 5650 8750 5650
+Wire Wire Line
+	8150 5750 8750 5750
+Wire Wire Line
+	8150 5950 8750 5950
+Text GLabel 8750 6050 2    50   Input ~ 0
+CLK
+Text GLabel 8750 6150 2    50   Input ~ 0
+RST
+Wire Wire Line
+	8150 6150 8750 6150
+Wire Wire Line
+	8150 6050 8750 6050
+$EndSCHEMATC
