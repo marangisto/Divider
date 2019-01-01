@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 13
+Sheet 4 13
 Title ""
 Date ""
 Rev ""
@@ -35,17 +35,6 @@ F 2 "" H 5450 3050 50  0001 C CNN
 F 3 "" H 5450 3050 50  0001 C CNN
 	1    5450 3050
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:-12V #PWR030
-U 1 1 5B5C94D1
-P 5450 4250
-F 0 "#PWR030" H 5450 4350 50  0001 C CNN
-F 1 "-12V" H 5450 4400 50  0000 C CNN
-F 2 "" H 5450 4250 50  0001 C CNN
-F 3 "" H 5450 4250 50  0001 C CNN
-	1    5450 4250
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:+5V #PWR025
@@ -80,33 +69,15 @@ F 3 "" H 3700 3600 50  0001 C CNN
 	1    3700 3600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5B5DABCD
-P 5200 4250
-F 0 "#FLG03" H 5200 4325 50  0001 C CNN
-F 1 "PWR_FLAG" H 5200 4400 50  0000 C CNN
-F 2 "" H 5200 4250 50  0001 C CNN
-F 3 "" H 5200 4250 50  0001 C CNN
-	1    5200 4250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4400 3450 4650 3300
-Wire Wire Line
-	4400 3850 4650 4000
-Wire Wire Line
-	4950 4000 5200 4000
 Wire Wire Line
 	3700 3650 3900 3650
 Wire Wire Line
 	5200 3600 5200 3650
 Connection ~ 5200 3650
 Connection ~ 5200 3300
-Connection ~ 5200 4000
 Connection ~ 5450 3300
-Wire Wire Line
-	5450 4000 5450 4250
 Wire Wire Line
 	6350 3650 6350 3600
 Wire Wire Line
@@ -128,8 +99,6 @@ Wire Wire Line
 	3700 3600 3700 3650
 Connection ~ 3700 3650
 Wire Wire Line
-	5200 4000 5200 4250
-Wire Wire Line
 	5200 3300 5200 3050
 Wire Wire Line
 	4400 3650 5200 3650
@@ -139,8 +108,6 @@ Wire Wire Line
 	5200 3650 5850 3650
 Wire Wire Line
 	5200 3300 5450 3300
-Wire Wire Line
-	5200 4000 5450 4000
 Wire Wire Line
 	5850 3650 6350 3650
 Wire Wire Line
@@ -190,17 +157,6 @@ F 3 "~" H 5200 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C6
-U 1 1 5B8C4452
-P 5200 3850
-F 0 "C6" H 5318 3896 50  0000 L CNN
-F 1 "10u" H 5318 3805 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.8" H 5238 3700 50  0001 C CNN
-F 3 "~" H 5200 3850 50  0001 C CNN
-	1    5200 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C5
 U 1 1 5B8C4492
 P 7200 3450
@@ -238,17 +194,6 @@ F 2 "Diode_SMD:D_PowerDI-123" H 4800 3300 50  0001 C CNN
 F 3 "~" H 4800 3300 50  0001 C CNN
 	1    4800 3300
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D D5
-U 1 1 5B8C45A3
-P 4800 4000
-F 0 "D5" H 4800 4216 50  0000 C CNN
-F 1 "DFLR1400-7" H 4800 4125 50  0000 C CNN
-F 2 "Diode_SMD:D_PowerDI-123" H 4800 4000 50  0001 C CNN
-F 3 "~" H 4800 4000 50  0001 C CNN
-	1    4800 4000
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J12
@@ -313,7 +258,6 @@ Wire Wire Line
 	8100 4100 8100 3950
 Wire Wire Line
 	3900 3850 4400 3850
-Connection ~ 4400 3850
 Wire Wire Line
 	3900 3750 4400 3750
 Wire Wire Line

@@ -659,13 +659,13 @@ F 3 "~" H 12950 5500 50  0001 C CNN
 	1    12950 5500
 	-1   0    0    1   
 $EndComp
-Text GLabel 8750 5050 2    50   Input ~ 0
+Text GLabel 8750 6150 2    50   Input ~ 0
 OUT0
-Text GLabel 8750 5150 2    50   Input ~ 0
-OUT1
 Text GLabel 8750 5250 2    50   Input ~ 0
+OUT1
+Text GLabel 8750 5950 2    50   Input ~ 0
 OUT2
-Text GLabel 8750 5350 2    50   Input ~ 0
+Text GLabel 8750 5150 2    50   Input ~ 0
 OUT3
 Text GLabel 8750 5450 2    50   Input ~ 0
 OUT4
@@ -673,7 +673,7 @@ Text GLabel 8750 5550 2    50   Input ~ 0
 OUT5
 Text GLabel 8750 5650 2    50   Input ~ 0
 OUT6
-Text GLabel 8750 5950 2    50   Input ~ 0
+Text GLabel 8750 5050 2    50   Input ~ 0
 OUT7
 Wire Wire Line
 	8150 5050 8750 5050
@@ -695,7 +695,7 @@ Wire Wire Line
 	8150 5950 8750 5950
 Text GLabel 8750 6050 2    50   Input ~ 0
 CLK
-Text GLabel 8750 6150 2    50   Input ~ 0
+Text GLabel 8750 5350 2    50   Input ~ 0
 RST
 Wire Wire Line
 	8150 6150 8750 6150
